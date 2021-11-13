@@ -1,7 +1,7 @@
 new Isotope("section",{
     itemSelector:".item",
     percentPosition: true,
-    transitionDuration: "0.8s",
+    transitionDuration: "0.5s",
     masonry: {
         columnWidth: ".item-resizer"
     }

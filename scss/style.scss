@@ -1,15 +1,16 @@
 @charset 'utf-8';
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&family=Zilla+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&family=Lato:wght@400;700&family=Zilla+Slab:wght@500&display=swap');
 @import 'reset';
 
 // font-family: 'Josefin Sans', sans-serif;
-// font-family: 'Raleway', sans-serif; X
+// font-family: 'Lato', sans-serif;
 // font-family: 'Zilla Slab', serif;
+
 
 main {
     width: 100%;
-    padding: 12vw 8vw;
+    padding: 14vw 10vw;
     background: #111;
 
     section {
@@ -40,7 +41,19 @@ main {
 
                 .sentence {
                     padding: 2vw;
-                    font: 400 1.6vw/1.4 'Josefin Sans'; color: #222;
+                    font: 400 1.4vw/1.4 'Josefin Sans'; color: #222;
+                }
+
+                a {
+                    display: block;
+                    width: 100%; height: 100%;
+                    padding: 2vw;
+                    text-align: center;
+                    font: 700 1.4vw/6vw 'Lato'; color: #222;
+                }
+
+                img {
+                    width: 100%; height: 100%; object-fit: cover;
                 }
             }
 
