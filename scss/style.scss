@@ -51,12 +51,14 @@ main {
                     width: 100%; height: 100%;
                     padding: 2vw;
                     text-align: center;
-                    font: 700 1.3vw/6vw 'Lato'; color: #222;
+                    font: 700 1.2vw/6vw 'Lato'; color: #222;
                     z-index: 1;
                 }
 
                 img {
                     width: 100%; height: 100%; object-fit: cover;
+                    z-index: 1;
+                    cursor: pointer;
                 }
             }
 
@@ -120,6 +122,29 @@ main {
             }
             &:nth-of-type(19) {
                 width: 50%; height: 40vw;
+            }
+            //7번째줄
+            &:nth-of-type(20) {
+                width: 50%; height: 40vw;
+                img { filter: grayscale(0.9) brightness(1.5);}
+            }
+            &:nth-of-type(21) {
+                width: 50%; height: 40vw;
+            }
+            //8번째줄
+            &:nth-of-type(22) {
+                width: 50%;
+            }
+            //9번째줄
+            &:nth-of-type(25) {
+                width: 50%;
+            }
+            &:nth-of-type(26) {
+                img { filter: grayscale(0.7) brightness(1.5); object-position: center 80%;}
+            }
+            //마지막줄
+            &:nth-of-type(28) {
+                width: 100%; height: 10vw;
             }
         }
     }

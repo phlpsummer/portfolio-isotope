@@ -51,13 +51,15 @@ main {
           height: 100%;
           padding: 2vw;
           text-align: center;
-          font: 700 1.3vw/6vw 'Lato';
+          font: 700 1.2vw/6vw 'Lato';
           color: #222;
           z-index: 1; }
         main section .item .inner img {
           width: 100%;
           height: 100%;
-          object-fit: cover; }
+          object-fit: cover;
+          z-index: 1;
+          cursor: pointer; }
       main section .item:nth-of-type(4) {
         height: 10vw; }
       main section .item:nth-of-type(5) {
@@ -97,5 +99,23 @@ main {
       main section .item:nth-of-type(19) {
         width: 50%;
         height: 40vw; }
+      main section .item:nth-of-type(20) {
+        width: 50%;
+        height: 40vw; }
+        main section .item:nth-of-type(20) img {
+          filter: grayscale(0.9) brightness(1.5); }
+      main section .item:nth-of-type(21) {
+        width: 50%;
+        height: 40vw; }
+      main section .item:nth-of-type(22) {
+        width: 50%; }
+      main section .item:nth-of-type(25) {
+        width: 50%; }
+      main section .item:nth-of-type(26) img {
+        filter: grayscale(0.7) brightness(1.5);
+        object-position: center 80%; }
+      main section .item:nth-of-type(28) {
+        width: 100%;
+        height: 10vw; }
 
 /*# sourceMappingURL=style.css.map */
