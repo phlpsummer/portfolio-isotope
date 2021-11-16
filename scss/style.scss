@@ -10,7 +10,7 @@
 
 main {
     width: 100%;
-    padding: 14vw 10vw;
+    padding: 8vw 10vw;
     background: #111;
 
     section {
@@ -264,12 +264,24 @@ main {
                     padding: 2vw;
                     position: absolute;
                     bottom: 0; left: 0;
-                    font-size: 1.8vw; font-weight: 600;
+                    font-size: 1.8vw; font-weight: 600; color: #444;
                 }
             }
             //9번째줄
             &:nth-of-type(25) {
                 width: 50%;
+
+                h1 {
+                    position: absolute;
+                    top: 42%; left: 2vw;
+                    font: 600 1.5vw/1 'Josefin Sans'; color: #222;
+                }
+                p {
+                    position: absolute;
+                    bottom: 0; left: 0;
+                    padding: 2vw;
+                    font: 400 1vw/1.6 'Lato'; color: #666; font-style: italic;
+                }
             }
             &:nth-of-type(26) {
                 .vid {
@@ -292,6 +304,30 @@ main {
             //마지막줄
             &:nth-of-type(29) {
                 width: 100%; height: 2.5vw;
+                .inner {
+                    display: block;
+                    
+                    ul {
+                        &::after { content: ''; display: block;}
+                        li {
+                            &:nth-of-type(1) {
+                                float: left;
+                                margin-left: 2vw;
+                                font: 400 12px/2.5vw 'Lato'; color: #333;
+                            }
+                            &:nth-of-type(2) {
+                                float: right;
+                                margin-right: 2vw;
+                                span {
+                                    display: inline-block;
+                                    margin: 0 20px;
+                                    font: 400 13px/2.5vw 'Lato'; color: #333;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
             }
         }
     }
