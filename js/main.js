@@ -1,3 +1,5 @@
+
+// slider
 const $slider = $("main section article .slider");
 let sliderNum = 1;
 
@@ -17,3 +19,12 @@ function goNext(){
         sliderNum++;
     },500);
 }
+
+// video
+const vid = document.querySelector("main section article .vid");
+vid.addEventListener("mouseenter",(e)=>{
+    e.currentTarget.querySelector("video").play();
+});
+vid.addEventListener("mouseleave",(e)=>{
+    e.currentTarget.querySelector("video").pause();
+});
