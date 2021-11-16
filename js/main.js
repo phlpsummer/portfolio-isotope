@@ -12,8 +12,8 @@ function goNext(){
        sliderNum=0;
     }
 
-    $slider.find("li").hide();
-    $slider.find("li").eq(sliderNum).show();
+    $slider.find("li").css({opacity:0});
+    $slider.find("li").eq(sliderNum).css({opacity:1});
 
     setTimeout(function(){
         sliderNum++;
