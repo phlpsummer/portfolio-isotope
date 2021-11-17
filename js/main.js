@@ -28,3 +28,17 @@ vid.addEventListener("mouseenter",(e)=>{
 vid.addEventListener("mouseleave",(e)=>{
     e.currentTarget.querySelector("video").pause();
 });
+
+// floatLetter
+const $letter = $("main section article .floatLetter");
+$letter.on("mousemove",function(e){
+    var boxX = $(this).offset().left;
+    var boxY = $(this).offset().top;
+
+    var posX = (e.pageX-boxX)/2;
+    var posY = (e.pageY-boxY)/2;
+
+    $(this).children("span").css({
+        top: posY, left: (posX - 50)
+    });
+});
