@@ -192,8 +192,8 @@ main {
           left: 0;
           padding: 5vw 3vw; }
           main section .item:nth-of-type(19) .inner .txt .subtitle1 {
-            font: 700 1vw/1 'Lato';
-            color: #555;
+            font: 700 0.9vw/1 'Lato';
+            color: #333;
             letter-spacing: 1px;
             position: relative;
             padding-bottom: 15px;
@@ -208,12 +208,12 @@ main {
               bottom: 0;
               left: 0; }
           main section .item:nth-of-type(19) .inner .txt .subtitle2 {
-            font: 700 1vw/1 'Lato';
-            color: #555;
+            font: 700 0.9vw/1 'Lato';
+            color: #333;
             letter-spacing: 1px;
             margin-bottom: 60px; }
           main section .item:nth-of-type(19) .inner .txt p {
-            font: 400 1vw/1.6 'Lato';
+            font: 400 0.8vw/1.6 'Lato';
             color: #666;
             margin-bottom: 30px; }
           main section .item:nth-of-type(19) .inner .txt a {
@@ -246,7 +246,7 @@ main {
           left: 0;
           padding: 5vw 3vw; }
           main section .item:nth-of-type(21) .txt p {
-            font: 400 1vw/1.6 'Lato';
+            font: 400 0.8vw/1.6 'Lato';
             color: #666;
             margin-bottom: 15px; }
             main section .item:nth-of-type(21) .txt p:last-of-type {
@@ -284,7 +284,7 @@ main {
           bottom: 0;
           left: 0;
           padding: 2vw;
-          font: 400 1vw/1.6 'Lato';
+          font: 400 0.9vw/1.8 'Lato';
           color: #666;
           font-style: italic; }
       main section .item:nth-of-type(26) .vid {
