@@ -11,6 +11,7 @@
 main {
     width: 100%;
     padding: 8vw 10vw;
+    // background: #48413B;
     background: #111;
 
     section {
@@ -24,9 +25,12 @@ main {
         }
 
         .item {
-            width: 25%; height: 20vw;
+            width: 25%;
+            // height: 20vw;
+            height: calc((100vw - 16vw) / 4); //21
             float: left;
             padding: 0.5px;
+            // border: 1px solid #777;
 
             .inner {
                 width: 100%; height: 100%;
@@ -106,13 +110,13 @@ main {
                 .lettering::after { content: 'o';}
             }
             &:nth-of-type(4) {
-                height: 10vw;
+                height: 10.5vw;
             }
             &:nth-of-type(5) {
-                height: 10vw;
+                height: 10.5vw;
             }
             &:nth-of-type(6) {
-                width: 50%; height: 10vw;
+                width: 50%; height: 10.5vw;
                 .inner {
                     .square {
                         display: inline-block;
@@ -173,14 +177,14 @@ main {
                 .lettering::after { content: 'e';}
             }
             &:nth-of-type(14) {
-                width: 50%; height: 40vw;
+                width: 50%; height: 42vw;
                 img {
                     position: absolute;
                     top: 0; left: 0;
                     transform: scale(0.9);
                     cursor: pointer;
 
-                    &:nth-of-type(1) { clip-path: circle(29.8% at 50% 40%);}
+                    &:nth-of-type(1) { clip-path: circle(29% at 50% 40%);}
                     &:nth-of-type(2) { clip-path: polygon(20% 40%, 80% 40%, 80% 90%, 20% 90%);}
                 }
             }
@@ -190,7 +194,7 @@ main {
 
             //6번째줄 -part2
             &:nth-of-type(18) {
-                width: 50%; height: 40vw;
+                width: 50%; height: 42vw;
                 .slider {
                     width: 18vw; height: 30vw; //width:18vw
                     position: absolute;
@@ -218,7 +222,7 @@ main {
                 }
             }
             &:nth-of-type(19) {
-                width: 50%; height: 40vw;
+                width: 50%; height: 42vw;
                 .inner {
                     h1 {
                         position: absolute;
@@ -254,7 +258,7 @@ main {
                         a {
                             display: inline-block;
                             padding: 8px 40px;
-                            font: 400 0.7vw/1 'Lato'; color: #444; letter-spacing: 3px;
+                            font: 400 0.6vw/1 'Lato'; color: #444; letter-spacing: 3px;
                             border: 1px solid #555; 
                             &:hover { background: rgba(255, 255, 255, 0.6); transition: 0.4s;}
                         }
@@ -263,11 +267,11 @@ main {
             }
             //7번째줄
             &:nth-of-type(20) {
-                width: 50%; height: 40vw;
+                width: 50%; height: 42vw;
                 img { filter: grayscale(0.9) brightness(1.5);}
             }
             &:nth-of-type(21) {
-                width: 50%; height: 40vw;
+                width: 50%; height: 42vw;
                 h1 {
                     position: absolute;
                     top: 3vw; left: 3vw;
@@ -285,7 +289,7 @@ main {
                     a {
                         display: inline-block;
                         padding: 8px 40px;
-                        font: 400 0.7vw/1 'Lato'; color: #444; letter-spacing: 3px;
+                        font: 400 0.6vw/1 'Lato'; color: #444; letter-spacing: 3px;
                         border: 1px solid #555; 
                         &:hover { background: rgba(255, 255, 255, 0.6); transition: 0.4s;}
                     }
@@ -332,7 +336,7 @@ main {
             }
             //풋터줄
             &:nth-of-type(28) {
-                width: 100%; height: 10vw;
+                width: 100%; height: 10.5vw;
                 .inner {
                     display: block;
 
@@ -420,7 +424,7 @@ main {
 
             //마지막줄
             &:nth-of-type(29) {
-                width: 100%; height: 2.5vw;
+                width: 100%; height: 2.625vw;
                 .inner {
                     display: block;
                     
@@ -430,7 +434,7 @@ main {
                             &:nth-of-type(1) {
                                 float: left;
                                 margin-left: 2vw;
-                                font: 400 13px/2.5vw 'Lato'; color: #333;
+                                font: 400 13px/2.625vw 'Lato'; color: #333;
                             }
                             &:nth-of-type(2) {
                                 float: right;
@@ -438,11 +442,34 @@ main {
                                 span {
                                     display: inline-block;
                                     margin-left: 50px;
-                                    font: 400 14px/2.5vw 'Lato'; color: #333;
+                                    font: 400 14px/2.625vw 'Lato'; color: #333;
                                     cursor: pointer;
                                 }
                                 
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:539px) {
+    main {
+        padding: 2vw 4vw;
+        section {
+            .item-resizer {
+                width: 50%;
+            }
+            .item {
+                width: 50%;
+
+                &:nth-of-type(6) {
+                    width: 100%; height: 10vw;
+                    .inner {
+                        .square {
+                            margin: 0 8vw;
                         }
                     }
                 }
