@@ -177,6 +177,34 @@ main {
             }
             &:nth-of-type(14) {
                 width: 50%; height: 42vw;
+
+                .floatBtn {
+                    width: 100%; height: 100%;
+                    position: absolute;
+                    top: 0; left: 0;
+                    z-index: 3;
+                    transition: 0.5s;
+                    opacity: 0;
+
+                    span {
+                        display: inline-block;
+                        width: 80px; height: 80px;
+                        border-radius: 50%;
+                        background: #fff;
+                        position: relative;
+                        text-align: center;
+                        cursor: pointer;
+                        i {
+                            font-size: 20px; line-height: 80px;
+                            color: #333;
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+                &:hover {
+                    .floatBtn { opacity: 1;}
+                }
+
                 img {
                     position: absolute;
                     top: 0; left: 0;

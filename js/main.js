@@ -31,6 +31,8 @@ vid.addEventListener("mouseleave",(e)=>{
 
 // floatLetter
 const $letter = $("main section article .floatLetter");
+const $enter = $("main section article .floatBtn");
+
 $letter.on("mousemove",function(e){
     var boxX = $(this).offset().left;
     var boxY = $(this).offset().top;
@@ -42,3 +44,28 @@ $letter.on("mousemove",function(e){
         top: posY, left: (posX - 50)
     });
 });
+
+$enter.on("mousemove", function(e){
+    var boxX = $(this).offset().left;
+    var boxY = $(this).offset().top;
+
+    var posX = (e.pageX-boxX);
+    var posY = (e.pageY-boxY);
+
+    $(this).children("span").css({
+        top: (posY - 40), left: (posX - 40)
+    });
+});
+
+
+// function floating(el,division,minusX,minusY){
+//     var boxX = $(el).offset().left;
+//     var boxY = $(el).offset().top;
+
+//     var posX = (e.pageX-boxX)/division;
+//     var posY = (e.pageY-boxY)/division;
+
+//     $(el).children("span").css({
+//         top: (posY - minusX), left: (posX - minusY)
+//     });
+// }
