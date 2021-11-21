@@ -73,7 +73,7 @@ main {
           position: absolute;
           bottom: 1.5vw;
           left: 2vw;
-          font: 400 1.2vw/1.6 'Lato';
+          font: 400 1.2vw/1.5 'Lato';
           color: #444; }
           main section .item .inner .btnLink:hover {
             color: #b2ada4;
@@ -304,9 +304,10 @@ main {
           position: absolute;
           bottom: 0;
           left: 0;
-          font-size: 1.8vw;
+          font-size: 1.6vw;
           font-weight: 600;
-          color: #444; }
+          color: #444;
+          letter-spacing: 1px; }
       main section .item:nth-of-type(25) {
         width: 50%; }
         main section .item:nth-of-type(25) h1 {
