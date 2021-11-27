@@ -144,7 +144,8 @@ main {
         content: 'e'; }
       main section .item:nth-of-type(14) {
         width: 50%;
-        height: 42vw; }
+        height: 42vw;
+        cursor: pointer; }
         main section .item:nth-of-type(14) .floatBtn {
           width: 100%;
           height: 100%;
@@ -156,26 +157,23 @@ main {
           opacity: 0; }
           main section .item:nth-of-type(14) .floatBtn span {
             display: inline-block;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
+            width: 150px;
+            height: 30px;
+            border-radius: 15px;
             background: #fff;
             position: relative;
             text-align: center;
-            cursor: pointer; }
-            main section .item:nth-of-type(14) .floatBtn span i {
-              font-size: 24px;
-              line-height: 80px;
-              color: #333;
-              transform: rotate(-90deg); }
+            cursor: pointer;
+            font: 13px/30px 'Zilla Slab';
+            color: #333;
+            letter-spacing: 1px; }
           main section .item:nth-of-type(14) .floatBtn:hover {
             opacity: 1; }
         main section .item:nth-of-type(14) img {
           position: absolute;
           top: 0;
           left: 0;
-          transform: scale(0.9);
-          cursor: pointer; }
+          transform: scale(0.9); }
           main section .item:nth-of-type(14) img:nth-of-type(1) {
             clip-path: circle(29% at 50% 40%); }
           main section .item:nth-of-type(14) img:nth-of-type(2) {

@@ -177,6 +177,7 @@ main {
             }
             &:nth-of-type(14) {
                 width: 50%; height: 42vw;
+                cursor: pointer;
 
                 .floatBtn {
                     width: 100%; height: 100%;
@@ -185,21 +186,34 @@ main {
                     z-index: 3;
                     transition: 0.5s;
                     opacity: 0;
+                    
 
                     span {
                         display: inline-block;
-                        width: 80px; height: 80px;
-                        border-radius: 50%;
+                        width: 150px; height: 30px;
+                        border-radius: 15px;
                         background: #fff;
                         position: relative;
                         text-align: center;
                         cursor: pointer;
-                        i {
-                            font-size: 24px; line-height: 80px;
-                            color: #333;
-                            transform: rotate(-90deg);
-                        }
+                        font: 13px/30px 'Zilla Slab';
+                        color: #333; letter-spacing: 1px;
+
                     }
+                    // span {
+                    //     display: inline-block;
+                    //     width: 80px; height: 80px;
+                    //     border-radius: 50%;
+                    //     background: #fff;
+                    //     position: relative;
+                    //     text-align: center;
+                    //     cursor: pointer;
+                    //     i {
+                    //         font-size: 24px; line-height: 80px;
+                    //         color: #333;
+                    //         transform: rotate(-90deg);
+                    //     }
+                    // }
                     &:hover { opacity: 1;}
                 }
 
@@ -207,7 +221,6 @@ main {
                     position: absolute;
                     top: 0; left: 0;
                     transform: scale(0.9);
-                    cursor: pointer;
 
                     &:nth-of-type(1) { clip-path: circle(29% at 50% 40%);}
                     &:nth-of-type(2) { clip-path: polygon(20% 40%, 80% 40%, 80% 90%, 20% 90%);}
