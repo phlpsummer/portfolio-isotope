@@ -187,7 +187,9 @@ main {
         main section .item:nth-of-type(16) .rotTxt svg text {
           font: 400 15px/1 'Lato';
           color: #111;
-          letter-spacing: 7px; }
+          letter-spacing: 7px;
+          transform-origin: center;
+          animation: rotateTxt 10s linear infinite; }
       main section .item:nth-of-type(17) .lettering::after {
         content: 's'; }
       main section .item:nth-of-type(18) {
@@ -603,5 +605,10 @@ main {
           line-height: 6vw; }
         main section .item:nth-of-type(29) .inner ul li:nth-of-type(2) span {
           line-height: 6vw; } }
+@keyframes rotateTxt {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=style.css.map */

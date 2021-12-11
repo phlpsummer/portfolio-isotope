@@ -237,6 +237,8 @@ main {
                         }
                         text {
                             font: 400 15px/1 'Lato'; color: #111; letter-spacing: 7px;
+                            transform-origin: center;
+                            animation: rotateTxt 10s linear infinite;
                         }
                     }
                 }
@@ -809,4 +811,9 @@ main {
             }
         }
     }
+}
+
+@keyframes rotateTxt {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
 }
