@@ -157,14 +157,14 @@ main {
           opacity: 0; }
           main section .item:nth-of-type(14) .floatBtn span {
             display: inline-block;
-            width: 150px;
-            height: 30px;
+            width: 160px;
+            height: 34px;
             border-radius: 15px;
             background: #fff;
             position: relative;
             text-align: center;
             cursor: pointer;
-            font: 13px/30px 'Zilla Slab';
+            font: bold 14px/30px 'Zilla Slab';
             color: #333;
             letter-spacing: 1px; }
           main section .item:nth-of-type(14) .floatBtn:hover {
@@ -178,6 +178,16 @@ main {
             clip-path: circle(29% at 50% 40%); }
           main section .item:nth-of-type(14) img:nth-of-type(2) {
             clip-path: polygon(20% 40%, 80% 40%, 80% 90%, 20% 90%); }
+      main section .item:nth-of-type(16) {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        main section .item:nth-of-type(16) .rotTxt svg path {
+          fill: transparent; }
+        main section .item:nth-of-type(16) .rotTxt svg text {
+          font: 400 15px/1 'Lato';
+          color: #111;
+          letter-spacing: 7px; }
       main section .item:nth-of-type(17) .lettering::after {
         content: 's'; }
       main section .item:nth-of-type(18) {

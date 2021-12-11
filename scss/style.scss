@@ -190,13 +190,13 @@ main {
 
                     span {
                         display: inline-block;
-                        width: 150px; height: 30px;
+                        width: 160px; height: 34px;
                         border-radius: 15px;
                         background: #fff;
                         position: relative;
                         text-align: center;
                         cursor: pointer;
-                        font: 13px/30px 'Zilla Slab';
+                        font: bold 14px/30px 'Zilla Slab';
                         color: #333; letter-spacing: 1px;
 
                     }
@@ -226,6 +226,22 @@ main {
                     &:nth-of-type(2) { clip-path: polygon(20% 40%, 80% 40%, 80% 90%, 20% 90%);}
                 }
             }
+            &:nth-of-type(16) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .rotTxt {
+                    svg {
+                        path {
+                            fill: transparent;
+                        }
+                        text {
+                            font: 400 15px/1 'Lato'; color: #111; letter-spacing: 7px;
+                        }
+                    }
+                }
+            }
+
             &:nth-of-type(17) {
                 .lettering::after { content: 's';}
             }
